@@ -13,6 +13,7 @@ env:
 
 jobs:
   deploy:
+    environment: aws
     runs-on: ubuntu-latest
 
     steps:
