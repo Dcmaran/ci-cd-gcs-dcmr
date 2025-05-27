@@ -23,7 +23,7 @@ data "aws_security_group" "eks_sg" {
 
 resource "aws_eks_node_group" "node_group" {
   cluster_name    = data.aws_eks_cluster.cluster.name
-  node_group_name = "nodeGroupDp008"
+  node_group_name = "nodeGroupDp010"
   node_role_arn   = var.node_role_arn
   subnet_ids      = data.aws_subnets.subnets.ids
 

@@ -1,6 +1,6 @@
 resource "kubernetes_deployment" "todo_app" {
   metadata {
-    name = "todo-app-dp008"
+    name = "todo-app-dp010"
     labels = {
       app = "todo"
     }
@@ -41,7 +41,7 @@ resource "kubernetes_deployment" "todo_app" {
 
 resource "kubernetes_service" "todo_service" {
   metadata {
-    name = "todo-service-dp008"
+    name = "todo-service-dp010"
   }
 
   spec {
